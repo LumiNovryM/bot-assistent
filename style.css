@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(./asset/bg.jpeg);
+    background-size: cover;
+}
+
+.container{
+    background-color: #3b3c37;
+    margin:  30px 0px;
+    margin-left: 700px;
+    height: 600px;
+    width: 500px;
+    border-radius: 10px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.title{
+    margin-bottom: 80px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.input label{
+    font-weight: bold;
+}
+
+.input input{
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #81807c;
+}
+
+button{
+    padding: 15px 45px;
+    position: absolute;
+    right: 20px;
+    bottom: 170px;
+    background-color: #888983;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .3s ease-in-out;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+button:hover{
+    opacity: .8;
+}
+
+/* Message */
+.pesan{
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    display: flex;
+}
+
+.pesan img{
+    height: 350px;
+}
+
+.mess{
+    width: 300px;
+    height: 150px;
+    background-color: #3b3c37;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 150px;
+    font-size: 25px;
+    animation: fade .5s ease-in-out ;
+    display: none;
+}
+
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+/* Step Two Start */
+
+.steptwo{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+
+.containertwo{
+    position: relative;
+    background-color: #3b3c37;
+    height: 600px;
+    width: 1200px;
+    border-radius: 10px;
+}
+/* Message */
+.pesantwo{
+    position: absolute;
+    top: 100px;
+    display: flex;
+}
+
+.pesantwo img{
+    height: 350px;
+}
+
+.messtwo{
+    width: 300px;
+    height: 150px;
+    background-color: #81807c;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 150px;
+    font-size: 25px;
+    animation: fade 1s ease-in-out ;
+}
